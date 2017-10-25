@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điều Khoản Sử Dụng"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:src="@drawable/icon_alobs"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_alobacsi" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chính sách bảo mật AloBacSi"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:text="       Nhằm tôn trọng và bảo vệ quyền lợi cho Người sử dụng ứng dụng AloBacSi. Chúng tôi đưa ra Chính sách bảo mật với một số điều khoản sử dụng ứng dụng cũng như mô tả chi tiết các chức năng của ứng dụng Thông qua chính sách này. Chúng tôi cam kết và mong muốn đem lại Sự an tâm, tin tưởng cao cho người sử dụng ứng dụng này.
+        Quý khách vui lòng đọc kỹ Điều khoản sử dụng của chúng tôi trước khi tiến hành tải. Cài đặt và sử dụng ứng dụng Quý khách chấp thuận và đồng ý bởi các quy định và điều kiện trong Điều khoản này đồng nghĩa với việc cài đặt và sử dụng ứng dụng. Trường hợp quý khách không đồng ý với bất kỳ điều khoản sử dụng nào của chúng tôi. Xin vui lòng không tải, không cài đặt, hoặc có thể để lại đánh giá của bạn qua email alobocsi@gmail.com"
+        android:layout_weight="1.32" />
+
+</LinearLayout>

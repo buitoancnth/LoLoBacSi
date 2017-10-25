@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_menu_bn_ca_nhan"
+            android:icon="@drawable/ic_menu_bn_ca_nhan"
+            android:title="Cá Nhân"
+            />
+        <item
+            android:id="@+id/ic_menu_bn_thong_bao"
+            android:icon="@drawable/ic_menu_bn_thong_bao"
+            android:title="Thông Báo" />
+        <item
+            android:id="@+id/ic_menu_bn_hop_thu"
+            android:icon="@drawable/ic_menu_bn_hop_thu"
+            android:title="Hộp Thư" />
+        <item
+            android:id="@+id/ic_menu_bn_nap_tien"
+            android:icon="@drawable/ic_menu_bn_nap_tien"
+            android:title="Nạp Tiền" />
+        <item
+            android:id="@+id/ic_menu_bn_ls_giao_dich"
+            android:icon="@drawable/ic_menu_bn_ls_giao_dich"
+            android:title="Lịch Sử Giao Dịch" />
+        <item
+            android:id="@+id/ic_menu_bn_ds_bs"
+            android:icon="@drawable/ic_menu_bn_ds_bs"
+            android:title="Danh sách Bác Sĩ" />
+        <item
+            android:id="@+id/ic_menu_bn_hs_benh_an"
+            android:icon="@drawable/ic_menu_bn_hs_benh_an"
+            android:title="Hồ Sơ Bệnh Án" />
+        <item
+            android:id="@+id/ic_menu_bn_dieu_khoan"
+            android:icon="@drawable/ic_menu_bn_dieu_khoan"
+            android:title="Điều Khoản" />
+        <item
+            android:id="@+id/ic_menu_bn_gop_y"
+            android:icon="@drawable/ic_menu_bn_gop_y"
+            android:title="Góp Ý"
+            />
+        <item
+            android:id="@+id/ic_menu_bn_dang_xuat"
+            android:icon="@drawable/ic_menu_bn_dang_xuat"
+            android:title="Đăng Xuất" />
+    </group>
+
+
+</menu>
