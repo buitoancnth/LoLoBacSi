@@ -12,6 +12,7 @@ namespace ServerAloBS.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BacSi()
         {
+            LichLamViecs = new HashSet<LichLamViec>();
             TinNhans = new HashSet<TinNhan>();
         }
 
@@ -43,6 +44,9 @@ namespace ServerAloBS.Models
         public int? NamKinhNghiem { get; set; }
 
         public virtual ChuyenKhoa ChuyenKhoa { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LichLamViec> LichLamViecs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TinNhan> TinNhans { get; set; }

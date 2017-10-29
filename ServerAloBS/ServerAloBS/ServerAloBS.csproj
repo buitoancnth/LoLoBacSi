@@ -267,6 +267,7 @@
     <Compile Include="Models\BenhNhan.cs" />
     <Compile Include="Models\ChuyenKhoa.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LichLamViec.cs" />
     <Compile Include="Models\TinNhan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -306,6 +307,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\ServerAloBacSi - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\ServerAloBacSi - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\ServerAloBS.pubxml" />

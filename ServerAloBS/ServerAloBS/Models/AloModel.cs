@@ -15,6 +15,7 @@ namespace ServerAloBS.Models
         public virtual DbSet<BacSi> BacSis { get; set; }
         public virtual DbSet<BenhNhan> BenhNhans { get; set; }
         public virtual DbSet<ChuyenKhoa> ChuyenKhoas { get; set; }
+        public virtual DbSet<LichLamViec> LichLamViecs { get; set; }
         public virtual DbSet<TinNhan> TinNhans { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

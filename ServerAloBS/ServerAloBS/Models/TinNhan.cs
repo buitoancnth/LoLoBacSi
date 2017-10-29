@@ -18,12 +18,13 @@ namespace ServerAloBS.Models
 
         [Column(TypeName = "ntext")]
         public string NoiDung { get; set; }
-        public DateTime? ThoiGian { get; set; } 
+
+        public DateTime? ThoiGian { get; set; }
 
         public bool? Chieu { get; set; }
 
-        public virtual BacSi BacSi { get; set; }
+       // public virtual BacSi BacSi { get; set; }
 
-        public virtual BenhNhan BenhNhan { get; set; }
+       // public virtual BenhNhan BenhNhan { get; set; }
     }
 }
