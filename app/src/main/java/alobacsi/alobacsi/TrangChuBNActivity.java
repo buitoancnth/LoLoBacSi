@@ -2,7 +2,9 @@ package alobacsi.alobacsi;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -32,9 +34,12 @@ public class TrangChuBNActivity extends AppCompatActivity
 //            }
 //        });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.getBackground().setAlpha(90);
-        toolbar.setTitle("Alo Bác Sĩ");
-        toolbar.setTitleTextColor(Color.WHITE);
+        //toolbar.getBackground().setAlpha(90);
+
+        //toolbar.setTitle("Alo Bác Sĩ");
+
+        //toolbar.setTitleTextColor(Color.WHITE);
+
 
         setSupportActionBar(toolbar);
 

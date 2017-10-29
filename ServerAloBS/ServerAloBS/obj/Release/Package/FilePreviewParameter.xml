@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ServerAloBacSi" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Study\\DH_BKDN\\ServerAloBS\\ServerAloBS\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^E:\\Study\\DH_BKDN\\ServerAloBS\\ServerAloBS\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AloModel-Web.config Connection String" description="" value="Data Source=tcp:alobacsiserver.database.windows.net,1433;Initial Catalog=AloBacSiDB;User ID=alobacsi;Password=Ttttq1995;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Study\\DH_BKDN\\ServerAloBS\\ServerAloBS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AloModel']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:alobacsiserver.database.windows.net,1433;Initial Catalog=AloBacSiDB;User ID=alobacsi;Password=Ttttq1995;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Study\\DH_BKDN\\ServerAloBS\\ServerAloBS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

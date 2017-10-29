@@ -13,7 +13,11 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/side_nav_bar"
+        android:background="#ca391c"
+        android:title="Toolbar Title"
+        android:titleMargin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:titleTextColor="@android:color/white"
 
         />
 

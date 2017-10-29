@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="#ecf0f1"
+    android:background="#c12c16"
     tools:openDrawer="start">
 
     <include
@@ -21,7 +21,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:background="@drawable/background_toolbar_2"
+        android:background="#B3E5FC"
 
         app:headerLayout="@layout/nav_header_trang_chu_bn"
 

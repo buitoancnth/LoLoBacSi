@@ -12,17 +12,15 @@
     android:layout_marginLeft="10dp"
     tools:showIn="@layout/app_bar_trang_chu_bn"
     tools:context="alobacsi.alobacsi.TrangChuBNActivity"
-    >
+
+    android:weightSum="1">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chat Trực Tiếp Với Bác Sĩ"
+        android:textColor="@android:color/white"
         android:textSize="16dp"
         android:textStyle="bold" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/holo_blue_dark"/>
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -36,7 +34,7 @@
             android:layout_height="0dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
-            android:src="@drawable/icon_bs1"
+            android:src="@drawable/icon_bs2"
             />
         <ImageView
             android:id="@+id/btnBS2"
@@ -44,7 +42,7 @@
             android:layout_height="0dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
-            android:src="@drawable/icon_bs1"
+            android:src="@drawable/icon_bs2"
             />
         <ImageView
             android:id="@+id/btnBS3"
@@ -52,7 +50,7 @@
             android:layout_height="0dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
-            android:src="@drawable/icon_bs1"
+            android:src="@drawable/icon_bs2"
             />
         <ImageView
             android:id="@+id/btnBS4"
@@ -60,7 +58,7 @@
             android:layout_height="0dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
-            android:src="@drawable/icon_bs1"
+            android:src="@drawable/icon_bs2"
             />
         <ImageView
             android:id="@+id/btnBS5"
@@ -68,7 +66,7 @@
             android:layout_height="0dp"
             app:layout_columnWeight="1"
             app:layout_rowWeight="1"
-            android:src="@drawable/icon_bs1"
+            android:src="@drawable/icon_bs2"
             />
         <TextView
             android:id="@+id/btnXemThem"
@@ -79,116 +77,152 @@
             android:gravity="bottom"
             android:layout_marginBottom="10dp"
             android:text="Xem Thêm..."
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             />
 
 
     </android.support.v7.widget.GridLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/holo_blue_dark"/>
+
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="30dp"
         app:columnCount="2"
-        app:rowCount="6">
+        app:rowCount="4">
 
-
-        <ImageView
-            android:id="@+id/btnHoiDap"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="2"
+            android:layout_margin="5dp"
+            android:background="#a3241e"
+            android:orientation="vertical"
             app:layout_column="0"
+            app:layout_columnWeight="1"
             app:layout_row="0"
-            android:src="@drawable/icon_hoi_dap"
-            />
-        <TextView
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/btnHoiDap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icon_hoi_dap_2"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="HỎI ĐÁP"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_column="0"
-            app:layout_row="2"
-            android:text="Hỏi Đáp"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-
-
-        <ImageView
-            android:id="@+id/btnLichHen"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="2"
+            android:layout_margin="5dp"
+            android:background="#a3241e"
+            android:orientation="vertical"
             app:layout_column="1"
+            app:layout_columnWeight="1"
             app:layout_row="0"
-            android:src="@drawable/icon_lich_hen"
-            />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_column="1"
-            app:layout_row="2"
-            android:text="Lịch Hẹn"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-        <ImageView
-            android:id="@+id/btnHopThu"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="2"
-            app:layout_column="0"
-            app:layout_row="3"
-            android:src="@drawable/icon_hop_thu"
-            />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_column="0"
-            app:layout_row="5"
-            android:text="Hộp Thư"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-        <ImageView
-            android:id="@+id/btnGoiDien"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="2"
-            app:layout_column="1"
-            app:layout_row="3"
-            android:src="@drawable/icon_goi_dien"
-            />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            app:layout_column="1"
-            app:layout_row="5"
-            android:text="Gọi Điện"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
+            app:layout_rowWeight="1">
 
+            <ImageView
+                android:id="@+id/btnLichHen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icon_lich_hen_1"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="LỊCH HẸN"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="#a3241e"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/btnHopThu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icon_hop_thu_1"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="HỘP THƯ"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="#a3241e"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/btnGoiDien"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icon_goi_dien_1"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="GỌI ĐIỆN"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </android.support.v7.widget.GridLayout>
-    <View
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/holo_blue_dark"/>
-
-
+        android:layout_height="wrap_content"
+        android:text="Tin Tức nỗi bật"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_weight="6.32" />
 
 </LinearLayout>

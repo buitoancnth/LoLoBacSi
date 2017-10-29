@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-ServerAloBS-20171028101820.mdf;Initial Catalog=aspnet-ServerAloBS-20171028101820;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Study\\DH_BKDN\\ServerAloBS\\ServerAloBS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AloModel-Web.config Connection String" description="AloModel Connection String used in web.config by the application to access the database." defaultValue="data source=tcp:alobacsiserver.database.windows.net,1433;initial catalog=AloBacSiDB;user id=alobacsi;password=Ttttq1995;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Study\\DH_BKDN\\ServerAloBS\\ServerAloBS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AloModel']/@connectionString" />
+  </parameter>
+</parameters>
