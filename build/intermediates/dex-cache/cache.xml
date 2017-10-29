@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\884eda2ce0cc9f269683f068476bb90796c423ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c86b28077118cfe594a23e59eb9fd79151933914\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\70c5a2eff4772f917ca689afea4eafe9766c0074\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_3ca670fb9a759393af6859c49f2baae1623ceb45.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\70c5a2eff4772f917ca689afea4eafe9766c0074\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ca670fb9a759393af6859c49f2baae1623ceb45\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\f5ed9493e37817e2a24c42d24663bae111ff7f95\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f77099d7f9bd5c4e2a9c7d7840359d8c14db0ca8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\2dde752813e8ea25b733d5e24de72cbd00e70cff\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8f3f799feb790e315ba321d9887c57f62d59a458\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="15d420c4b7f1e7033f243303594ebea14f0d26a3">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8d5e28f88f15ad94aed7200c84983a60b6b88280\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\884eda2ce0cc9f269683f068476bb90796c423ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_c86b28077118cfe594a23e59eb9fd79151933914.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\82cc6c450e32db6039a73c1a46eb8f2f2a44e85b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4b4502321deb93da37b86fd5143f27f54a4c64cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\82cc6c450e32db6039a73c1a46eb8f2f2a44e85b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_4b4502321deb93da37b86fd5143f27f54a4c64cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_29b187ce945ebb8e23eb92fc75a36cf7e40a52f7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b5167a13a99e8433f8c8723f79c55adad4659264\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\2dde752813e8ea25b733d5e24de72cbd00e70cff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_8f3f799feb790e315ba321d9887c57f62d59a458.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_29b187ce945ebb8e23eb92fc75a36cf7e40a52f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_054774b1d711ed50515f571e1b2f14e90e5b3f36\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_054774b1d711ed50515f571e1b2f14e90e5b3f36.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\81f3418a32d98272b994320ab9361371700668c6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9296bc77404ff3f2a00ba97233afc2cbf26830fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\2e175449e318e5a715f4ca16e97d6bf2e8831f1c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_607f6f2f134e1475e1806e50020c74f6879bc9f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\9d7cfa4ca33e90085a6b47234b052be330e49be6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_ac53994592fc148c21f52963add23b1361755ea7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\f0fc420253e9047ac394e52e3399677949ef32ca\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d8857190e1e732b03d69b78075548760e384e5cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\2e175449e318e5a715f4ca16e97d6bf2e8831f1c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_607f6f2f134e1475e1806e50020c74f6879bc9f6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\9d7cfa4ca33e90085a6b47234b052be330e49be6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ac53994592fc148c21f52963add23b1361755ea7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\f0fc420253e9047ac394e52e3399677949ef32ca\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_d8857190e1e732b03d69b78075548760e384e5cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\e5b4ef106a7a16c318d3f26de7a3438ee612425f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3a1bac2cc31df44dbf1f9bbf2c675319503c9271">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_6d8a6e3c96a1594d23a7ddc996481aae56b3a535.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\e5b4ef106a7a16c318d3f26de7a3438ee612425f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3a1bac2cc31df44dbf1f9bbf2c675319503c9271">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6d8a6e3c96a1594d23a7ddc996481aae56b3a535\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\81f3418a32d98272b994320ab9361371700668c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_9296bc77404ff3f2a00ba97233afc2cbf26830fc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\10c60fa257ace041b6665489414f70b1c4b5f3d9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bd3e07d93dba10b9934d3185d3738bbc1f6ff441\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\f0f9d25b257a62cfbcbe4dec6c186b082420eb52\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4fb1ddee05b8e022b8804c9df78f1de5bf9c05e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\f0f9d25b257a62cfbcbe4dec6c186b082420eb52\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_4fb1ddee05b8e022b8804c9df78f1de5bf9c05e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\10c60fa257ace041b6665489414f70b1c4b5f3d9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_bd3e07d93dba10b9934d3185d3738bbc1f6ff441.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\475fad462556c63a0b685fe423b060b454696303\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_1fedcfeb99e17993b1fe257c505bb1098145e9cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\d9245f4dce012d78dce747c472f8e57435140dc6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_01e916224a6449314f58ce56281cda2ee0359bdf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\475fad462556c63a0b685fe423b060b454696303\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1fedcfeb99e17993b1fe257c505bb1098145e9cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\DHQ\.android\build-cache\d9245f4dce012d78dce747c472f8e57435140dc6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_01e916224a6449314f58ce56281cda2ee0359bdf\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DHQ\.android\build-cache\f5ed9493e37817e2a24c42d24663bae111ff7f95\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\Documents\GitHub\LoLoBacSi\app\build\intermediates\pre-dexed\debug\classes_f77099d7f9bd5c4e2a9c7d7840359d8c14db0ca8.jar" />
+    </item>
+
+</items>

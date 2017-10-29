@@ -21,10 +21,9 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:background="@drawable/background_toolbar_2"
+        android:background="#3be5cf"
 
         app:headerLayout="@layout/nav_header_trang_chu_bn"
-
         app:menu="@menu/activity_trang_chu_bn_drawer"
         />
 
