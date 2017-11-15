@@ -17,33 +17,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import alobacsi.alobacsi.DTO.LoginModel;
 
 public class TrangChuBNActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    ImageView btnTinNhan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trang_chu_bn);
-//        Button btn=(Button) findViewById(R.id.btnDieukhoan);
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent it=new Intent(TrangChuBNActivity.this,DieuKhoanActivity.class);
-//                startActivity(it);
-//            }
-//        });
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar.getBackground().setAlpha(90);
-
-        //toolbar.setTitle("Alo Bác Sĩ");
-
-        //toolbar.setTitleTextColor(Color.WHITE);
-
-
         setSupportActionBar(toolbar);
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -53,6 +40,15 @@ public class TrangChuBNActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        btnTinNhan=(ImageView)findViewById(R.id.btnHopThu);
+        btnTinNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it=new Intent(TrangChuBNActivity.this,TinNhanActivity.class);
+                startActivity(it);
+            }
+        });
 
     }
 

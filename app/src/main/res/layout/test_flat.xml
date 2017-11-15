@@ -132,7 +132,6 @@
                 android:layout_width="match_parent"
                 android:src="@drawable/icon_lich_hen"
                 android:layout_weight="1"
-
                 />
             <TextView
                 android:layout_width="match_parent"

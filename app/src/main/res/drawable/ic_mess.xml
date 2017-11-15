@@ -1,0 +1,32 @@
+<vector android:autoMirrored="true" android:height="640dp"
+    android:viewportHeight="640" android:viewportWidth="360"
+    android:width="360dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#fff" android:name="Background" android:pathData="m0 0h360v640h-360v-640z"/>
+    <path android:fillAlpha="0.12" android:fillColor="#000"
+        android:name="Divider" android:pathData="m72 654h288v1h-288v-1z"/>
+    <path android:fillAlpha="0.12" android:fillColor="#000"
+        android:name="Divider" android:pathData="m72 566h288v1h-288v-1z"/>
+    <path android:fillAlpha="0.12" android:fillColor="#000"
+        android:name="Divider" android:pathData="m72 478h288v1h-288v-1z"/>
+    <path android:fillAlpha="0.12" android:fillColor="#000"
+        android:name="Divider" android:pathData="m72 390h288v1h-288v-1z"/>
+    <path android:fillAlpha="0.12" android:fillColor="#000"
+        android:name="Divider" android:pathData="m72 302h288v1h-288v-1z"/>
+    <path android:fillAlpha="0.12" android:fillColor="#000"
+        android:name="Divider" android:pathData="m72 214h288v1h-288v-1z"/>
+    <path android:fillColor="#2a56c6" android:name="Oval" android:pathData="m316 520c15.5 0 28 12.5 28 28c0 15.5 -12.5 28 -28 28c-15.5 0 -28 -12.5 -28 -28c0 -15.5 12.5 -28 28 -28z"/>
+    <path android:fillColor="#fff" android:name="Shape" android:pathData="m315 541v6h-6v2h6v6h2v-6h6v-2h-6v-6h-2z"/>
+    <path android:fillColor="#000" android:name="navbar bg" android:pathData="m0 592h360v48h-360v-48z"/>
+    <path android:fillColor="#fff" android:name="recent" android:pathData="m287 610v12h-12v-12zm-12 -2c-1.1 0 -2 0.9 -2 2v12c0 1.1 0.9 2 2 2h12c1.1 0 2 -0.9 2 -2v-12c0 -1.1 -0.9 -2 -2 -2z"/>
+    <path android:fillColor="#fff" android:name="home" android:pathData="m180 610c3.3 0 6 2.7 6 6c0 3.3 -2.7 6 -6 6c-3.3 0 -6 -2.7 -6 -6c0 -3.3 2.7 -6 6 -6zm0 -2c-4.4 0 -8 3.6 -8 8c0 4.4 3.6 8 8 8c4.4 0 8 -3.6 8 -8c0 -4.4 -3.6 -8 -8 -8z"/>
+    <path android:name="back"
+        android:pathData="m85.3 607.3c0.9 -0.6 1.7 -0.1 1.7 1v14.8c0 1.1 -0.8 1.6 -1.7 1l-12.4 -7.4c-0.9 -0.6 -0.9 -1.5 0 -2l12.4 -7.4z"
+        android:strokeColor="#fff" android:strokeMiterLimit="100" android:strokeWidth="2"/>
+    <path android:fillColor="#2a56c6" android:name="app bar bg" android:pathData="m0 0h360v80h-360v-80z"/>
+    <path android:fillColor="#fff" android:name="Shape" android:pathData="m330.1 53.7c-2.4 0 -4.4 -2 -4.4 -4.4c0 -2.4 2 -4.4 4.4 -4.4c2.4 0 4.4 2 4.4 4.4c0 2.4 -2 4.4 -4.4 4.4zm5.9 0h-0.8l-0.3 -0.3c1 -1.1 1.5 -2.5 1.5 -4.1c0 -3.5 -2.8 -6.3 -6.3 -6.3c-3.5 0 -6.3 2.8 -6.3 6.3c0 3.5 2.8 6.3 6.3 6.3c1.6 0 3 -0.6 4.1 -1.5l0.3 0.3v0.8l4.9 4.9l1.5 -1.5l-4.9 -4.9z"/>
+    <path android:fillColor="#fff" android:name="Shape" android:pathData="m19 46v2h18v-2h-18zm0 7h18v-2h-18v2zm0 5h18v-2h-18v2z"/>
+    <path android:fillColor="#1c3aa9" android:name="Status bar bg" android:pathData="m0 0h360v24h-360v-24z"/>
+    <path android:fillColor="#fff" android:name="Shape" android:pathData="m306 5.9v-0.9h-3v0.9h-3v13.1h9v-13.1h-3z"/>
+    <path android:fillColor="#fff" android:name="Shape" android:pathData="m277 19h14v-14l-14 14z"/>
+    <path android:fillColor="#fff" android:name="Shape" android:pathData="m275 8c-2.5 -1.9 -5.6 -3 -9 -3c-3.4 0 -6.5 1.1 -9 3l9 11l9 -11z"/>
+</vector>
