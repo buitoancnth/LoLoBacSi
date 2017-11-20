@@ -1,0 +1,40 @@
+public class DimenFactory extends DefaultTask {
+  `@Input
+  int[] dimens = [320, 360, 384, 411, 480, 540, 600, 720, 800, 1024, 1080, 1280, 1440, 2560, 3840];
+  `@Input
+  int fromDimen = 300;
+  `@Input
+  double positiveMaxDP = 200
+  `@Input
+  double positiveMaxSP = 60
+  `@Input
+  double negativeMaxDP = 60
+  `@Input
+  double negativeMaxSP = 20
+  int maxSize = 810;
+  `@Input
+  DimenType type = DimenType.FROM_LAYOUT
+  `@Input
+  String dimenFileName = "values/dimen.xml"
+
+  String resFolder = project.getProjectDir().getPath() + "/src/main/res/"
+  String layoutFolder = project.getProjectDir().getPath() + "/src/main/res/layout"
+  String layoutLandFolder = project.getProjectDir().getPath() + "/src/main/res/layout-land"
+
+  `@TaskAction
+  def create() {
+    switch (type) {
+      case DimenType.FROM_LAYOUT:
+        createDimenFromLayout();
+        break;
+      case DimenType.AUTO_CREATE:
+        autoCreateDimen();
+        break;
+      case DimenType.FROM_DIMEN_FILE:
+        createDimenFromDimenFile();
+        break;
+      default:
+        break;
+    }
+  }
+}

@@ -15,34 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".TrangChuBNActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".DieuKhoanActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".HomeUserActivity">
 
         </activity>
         <activity
-            android:name=".TrangChuBSActivity"
-            android:label="@string/title_activity_trang_chu_bs"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TinNhanActivity"
-            android:label="Tin Nhắn" />
-        <activity
-            android:name=".MenuTestActivity"
-            android:label="@string/title_activity_menu_test">
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
 
 
         </activity>
