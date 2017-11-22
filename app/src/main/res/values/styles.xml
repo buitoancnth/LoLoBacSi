@@ -27,8 +27,8 @@
         <!-- Support library compatibility -->
         <item name="windowActionBarOverlay">true</item>
     </style>
-    <style name="TabBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+    <style name="TabBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
     </style>
 

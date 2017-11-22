@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_tin_tuc"
         android:icon="@drawable/ic_newspaper"
         android:title=""
      />
@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_hoi_dap_2"
         android:title=""/>
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_trang_chu"
         android:icon="@drawable/ic_trang_chu"
         android:title=""/>
     <item
@@ -18,7 +18,7 @@
         android:icon="@drawable/ic_bac_si"
         android:title=""/>
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_tai_khoan"
         android:icon="@drawable/ic_tai_khoan"
         android:title=""/>
 </menu>

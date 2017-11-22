@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-   >
+    >
     <ImageView
-        android:id="@+id/imgView1"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_weight="1"
@@ -16,19 +15,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:gravity="center_horizontal"
-        android:text="@string/title_home"
+        android:text="Chuyên Khoa"
         android:textColor="@color/colorFontToolBar"
-        android:id="@+id/titleBar"
         android:textSize="@dimen/title_action_bar"
         android:layout_weight="1"
         >
     </TextView>
     <ImageView
-        android:id="@+id/imgView2"
+        android:id="@+id/btnTimKiemChuyenKhoa"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginLeft="80dp"
         android:layout_gravity="right"
-        android:src="@drawable/ic_bell"
+        android:src="@drawable/ic_tim_kiem"
         android:layout_weight="1"/>
 </LinearLayout>
