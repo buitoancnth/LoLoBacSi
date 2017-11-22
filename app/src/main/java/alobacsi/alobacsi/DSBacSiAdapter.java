@@ -1,11 +1,11 @@
 package alobacsi.alobacsi;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,66 +17,92 @@ import alobacsi.alobacsi.DTO.BacSi;
  * Created by lequa on 22/11/2017.
  */
 
-public class DSBacSiAdapter  extends BaseAdapter {
+public class DSBacSiAdapter extends RecyclerView.Adapter<DSBacSiAdapter.ViewHolder> {
 
-    private List<BacSi> listData;
-    private LayoutInflater layoutInflater;
+    private List<BacSi> mData;
+    private LayoutInflater mInflater;
+    private ItemClickListener mClickListener;
     private Context context;
 
-    public DSBacSiAdapter(Context aContext,  List<BacSi> listData) {
-        this.context = aContext;
-        this.listData = listData;
-        layoutInflater = LayoutInflater.from(aContext);
+    // data is passed into the constructor
+    DSBacSiAdapter(Context context, List<BacSi> data) {
+        this.mInflater = LayoutInflater.from(context);
+        this.mData = data;
+        this.context=context;
     }
 
+    // inflates the cell layout from xml when needed
     @Override
-    public int getCount() {
-        return listData.size();
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = mInflater.inflate(R.layout.item_ds_bac_si, parent, false);
+        return new ViewHolder(view);
     }
 
+    // binds the data to the textview in each cell
     @Override
-    public Object getItem(int position) {
-        return listData.get(position);
-    }
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        BacSi bacSi = mData.get(position);
 
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-    public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
-        if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.item_ds_bac_si, null);
-            holder = new ViewHolder();
-            holder.imgBacSi = (ImageView) convertView.findViewById(R.id.imgBacSi);
-            holder.tvBacSi = (TextView) convertView.findViewById(R.id.tvBacSi);
-            holder.soSao1=(ImageView)convertView.findViewById(R.id.soSao1);
-            holder.soSao2=(ImageView)convertView.findViewById(R.id.soSao2);
-            holder.soSao3=(ImageView)convertView.findViewById(R.id.soSao3);
-            holder.soSao4=(ImageView)convertView.findViewById(R.id.soSao4);
-            holder.soSao5=(ImageView)convertView.findViewById(R.id.soSao5);
-
-            convertView.setTag(holder);
-        } else {
-            holder = (ViewHolder) convertView.getTag();
-        }
-
-        BacSi bacSi = this.listData.get(position);
-        holder.tvBacSi.setText(bacSi.getTenBacSi());
         int imageId = this.getMipmapResIdByName(bacSi.getTenAnh());
-
         holder.imgBacSi.setImageResource(imageId);
+
+        holder.tvBacSi.setText(bacSi.getTenBacSi());
 
         ImageView[] tmp={holder.soSao1,holder.soSao2,holder.soSao3,holder.soSao4,holder.soSao5};
         for(int i=0;i<bacSi.getSoSao();i++) {
             tmp[i].setImageResource(this.getMipmapResIdByName("ic_star_full"));
         }
-
-        return convertView;
     }
 
-    // Tìm ID của Image ứng với tên của ảnh (Trong thư mục mipmap).
+    // total number of cells
+    @Override
+    public int getItemCount() {
+        return mData.size();
+    }
+
+
+    // stores and recycles views as they are scrolled off screen
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        ImageView imgBacSi;
+        TextView tvBacSi;
+        ImageView soSao1;
+        ImageView soSao2;
+        ImageView soSao3;
+        ImageView soSao4;
+        ImageView soSao5;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+            imgBacSi = (ImageView) itemView.findViewById(R.id.imgBacSi);
+            tvBacSi = (TextView) itemView.findViewById(R.id.tvBacSi);
+            soSao1 = (ImageView) itemView.findViewById(R.id.soSao1);
+            soSao2 = (ImageView) itemView.findViewById(R.id.soSao2);
+            soSao3 = (ImageView) itemView.findViewById(R.id.soSao3);
+            soSao4 = (ImageView) itemView.findViewById(R.id.soSao4);
+            soSao5 = (ImageView) itemView.findViewById(R.id.soSao5);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
+        }
+    }
+
+    // convenience method for getting data at click position
+    Object getItem(int id) {
+        return mData.get(id);
+    }
+
+    // allows clicks events to be caught
+    void setClickListener(ItemClickListener itemClickListener) {
+        this.mClickListener = itemClickListener;
+    }
+
+    // parent activity will implement this method to respond to click events
+    public interface ItemClickListener {
+        void onItemClick(View view, int position);
+    }
     public int getMipmapResIdByName(String resName)  {
         String pkgName = context.getPackageName();
 
@@ -85,15 +111,4 @@ public class DSBacSiAdapter  extends BaseAdapter {
         Log.i("CustomListView", "Res Name: "+ resName+"==> Res ID = "+ resID);
         return resID;
     }
-
-    static class ViewHolder {
-        ImageView imgBacSi;
-        TextView tvBacSi;
-        ImageView soSao1;
-        ImageView soSao2;
-        ImageView soSao3;
-        ImageView soSao4;
-        ImageView soSao5;
-    }
-
 }

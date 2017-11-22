@@ -2,10 +2,11 @@ package alobacsi.alobacsi;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,17 +17,20 @@ import alobacsi.alobacsi.DTO.ChuyenKhoa;
  * Created by lequa on 21/11/2017.
  */
 
-public class ChuyenKhoaFragment extends Fragment {
+public class ChuyenKhoaFragment extends Fragment implements ChuyenKhoaAdapter.ItemClickListener{
+    ChuyenKhoaAdapter adapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
 
         View view = inflater.inflate(R.layout.fragment_chuyen_khoa, container, false);
-        List<ChuyenKhoa> ck = getListData();
-        GridView gv = (GridView)view.findViewById(R.id.gvChuyenKhoa)  ;
-        gv.setAdapter(new ChuyenKhoaAdapter(getActivity().getApplicationContext(), ck));
-        // Inflate the layout for this fragment
+        List<ChuyenKhoa> data = getListData();
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rvChuyenKhoa);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getApplicationContext(), 2));
+        adapter = new ChuyenKhoaAdapter(getActivity().getApplicationContext(), data);
+        adapter.setClickListener(this);
+        recyclerView.setAdapter(adapter);
 
 
 
@@ -49,5 +53,10 @@ public class ChuyenKhoaFragment extends Fragment {
         list.add(ctch);
 
         return list;
+    }
+
+    @Override
+    public void onItemClick(View view, int position) {
+
     }
 }

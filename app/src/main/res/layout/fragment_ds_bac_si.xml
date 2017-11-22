@@ -4,13 +4,9 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     >
-    <GridView
-        android:id="@+id/gvBacSi"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvBacSi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:numColumns="2"
-        android:layout_marginBottom="60dp">
-    </GridView>
+        android:layout_marginBottom="60dp"/>
 </LinearLayout>

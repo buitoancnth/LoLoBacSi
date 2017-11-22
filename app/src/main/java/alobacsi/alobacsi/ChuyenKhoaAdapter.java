@@ -1,72 +1,87 @@
 package alobacsi.alobacsi;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.List;
-
 import alobacsi.alobacsi.DTO.ChuyenKhoa;
 
-/**
- * Created by lequa on 22/11/2017.
- */
+public class ChuyenKhoaAdapter extends RecyclerView.Adapter<ChuyenKhoaAdapter.ViewHolder> {
 
-public class ChuyenKhoaAdapter  extends BaseAdapter {
-
-    private List<ChuyenKhoa> listData;
-    private LayoutInflater layoutInflater;
+    private List<ChuyenKhoa> mData;
+    private LayoutInflater mInflater;
+    private ItemClickListener mClickListener;
     private Context context;
 
-    public ChuyenKhoaAdapter(Context aContext,  List<ChuyenKhoa> listData) {
-        this.context = aContext;
-        this.listData = listData;
-        layoutInflater = LayoutInflater.from(aContext);
+    // data is passed into the constructor
+    ChuyenKhoaAdapter(Context context, List<ChuyenKhoa> data) {
+        this.mInflater = LayoutInflater.from(context);
+        this.mData = data;
+        this.context=context;
     }
 
+    // inflates the cell layout from xml when needed
     @Override
-    public int getCount() {
-        return listData.size();
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = mInflater.inflate(R.layout.item_chuyen_khoa, parent, false);
+        return new ViewHolder(view);
     }
 
+    // binds the data to the textview in each cell
     @Override
-    public Object getItem(int position) {
-        return listData.get(position);
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        ChuyenKhoa chuyenKhoa = mData.get(position);
+
+        int imageId = this.getMipmapResIdByName(chuyenKhoa.getTenAnh());
+        holder.imgChuyenKhoa.setImageResource(imageId);
+        holder.tvChuyenKhoa.setText(chuyenKhoa.getTenChuyenKhoa());
+
     }
 
+    // total number of cells
     @Override
-    public long getItemId(int position) {
-        return position;
+    public int getItemCount() {
+        return mData.size();
     }
 
-    public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
-        if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.item_chuyen_khoa, null);
-            holder = new ViewHolder();
-            holder.imgChuyenKhoa = (ImageView) convertView.findViewById(R.id.imgChuyenKhoa);
-            holder.tvChuyenKhoa = (TextView) convertView.findViewById(R.id.tvChuyenKhoa);
-            convertView.setTag(holder);
-        } else {
-            holder = (ViewHolder) convertView.getTag();
+
+    // stores and recycles views as they are scrolled off screen
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        ImageView imgChuyenKhoa;
+        TextView tvChuyenKhoa;
+
+        ViewHolder(View itemView) {
+            super(itemView);
+            imgChuyenKhoa = (ImageView) itemView.findViewById(R.id.imgChuyenKhoa);
+            tvChuyenKhoa = (TextView) itemView.findViewById(R.id.tvChuyenKhoa);
+            itemView.setOnClickListener(this);
         }
 
-        ChuyenKhoa chuyenKhoa = this.listData.get(position);
-        holder.tvChuyenKhoa.setText(chuyenKhoa.getTenChuyenKhoa());
-        int imageId = this.getMipmapResIdByName(chuyenKhoa.getTenAnh());
-
-        holder.imgChuyenKhoa.setImageResource(imageId);
-
-        return convertView;
+        @Override
+        public void onClick(View view) {
+            if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
+        }
     }
 
-    // Tìm ID của Image ứng với tên của ảnh (Trong thư mục mipmap).
+    // convenience method for getting data at click position
+    Object getItem(int id) {
+        return mData.get(id);
+    }
+
+    // allows clicks events to be caught
+    void setClickListener(ItemClickListener itemClickListener) {
+        this.mClickListener = itemClickListener;
+    }
+
+    // parent activity will implement this method to respond to click events
+    public interface ItemClickListener {
+        void onItemClick(View view, int position);
+    }
     public int getMipmapResIdByName(String resName)  {
         String pkgName = context.getPackageName();
 
@@ -75,10 +90,4 @@ public class ChuyenKhoaAdapter  extends BaseAdapter {
         Log.i("CustomListView", "Res Name: "+ resName+"==> Res ID = "+ resID);
         return resID;
     }
-
-    static class ViewHolder {
-        ImageView imgChuyenKhoa;
-        TextView tvChuyenKhoa;
-    }
-
 }

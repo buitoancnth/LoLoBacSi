@@ -5,11 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="50dp"
     >
-
-    <GridView
-        android:id="@+id/gvChuyenKhoa"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvChuyenKhoa"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="2">
-    </GridView>
+        android:layout_height="wrap_content" />
 </LinearLayout>
