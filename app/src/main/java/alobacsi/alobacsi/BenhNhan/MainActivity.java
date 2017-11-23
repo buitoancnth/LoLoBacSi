@@ -1,4 +1,4 @@
-package alobacsi.alobacsi;
+package alobacsi.alobacsi.BenhNhan;
 
 
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import alobacsi.alobacsi.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,12 +26,10 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_trang_chu:
                     callFragment(new HomeUserFragment());
-                    getSupportActionBar().setCustomView(R.layout.action_bar_home);
                     return true;
                 case R.id.navigation_khoa:
-//                   callFragment(new ChuyenKhoaFragment());
-                    callFragment(new DSBacSiFragment());
-                    getSupportActionBar().setCustomView(R.layout.action_bar_chuyen_khoa);
+                   callFragment(new ChuyenKhoaFragment());
+//                    callFragment(new DSBacSiFragment());
                     return true;
                 case R.id.navigation_tai_khoan:
                     return true;
@@ -49,10 +47,6 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         BottomNavigationViewHelper.disableShiftMode(navigation);
-
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.action_bar_home);
-
         callFragment(new HomeUserFragment());
 
     }

@@ -1,4 +1,4 @@
-package alobacsi.alobacsi;
+package alobacsi.alobacsi.BenhNhan;
 
 import android.annotation.SuppressLint;
 import android.support.design.internal.BottomNavigationItemView;

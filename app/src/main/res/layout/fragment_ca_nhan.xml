@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#eeeeee"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tvTenBacSi"
+                android:text="Thị Nở"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_gravity="center" />
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgBacSi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/img_huu_quan"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/tvTuoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22 Tuổi"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:id="@+id/tvSoDuTaiKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0 Vnđ"
+                    android:textColor="#ffffff"/>
+
+                
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvChuyenKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chuyên Khoa : Răng - Hàm - Mặt"
+        android:background="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:padding="7dp"
+        />
+    <TextView
+        android:id="@+id/tvKinhNghiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kinh Nghiệm : 3 năm"
+        android:background="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:padding="7dp"
+        />
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa Chỉ : Ấp A, Huyện B, Đà Nẵng"
+        android:background="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:padding="7dp"
+        />
+    <TextView
+        android:id="@+id/tvSoLanTuVan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số Lần Tư Vấn : 302"
+        android:background="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:padding="7dp"
+        />
+
+
+</LinearLayout>

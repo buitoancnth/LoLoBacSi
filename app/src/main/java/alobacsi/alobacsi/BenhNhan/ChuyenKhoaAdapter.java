@@ -1,4 +1,4 @@
-package alobacsi.alobacsi;
+package alobacsi.alobacsi.BenhNhan;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 import alobacsi.alobacsi.DTO.ChuyenKhoa;
+import alobacsi.alobacsi.R;
 
 public class ChuyenKhoaAdapter extends RecyclerView.Adapter<ChuyenKhoaAdapter.ViewHolder> {
 
