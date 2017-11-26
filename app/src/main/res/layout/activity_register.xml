@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alobacsi.alobacsi.BenhNhan.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/bieutuong" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_textfield"
+                android:drawableLeft="@drawable/ic_fullname"
+                android:hint="Họ tên"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="5dp"
+                android:paddingLeft="11dp"
+                android:paddingTop="6dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_textfield"
+                android:drawableLeft="@drawable/ic_mail"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="5dp"
+                android:paddingLeft="11dp"
+                android:paddingTop="6dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_textfield"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableRight="@drawable/ic_eye"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:paddingBottom="5dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="15dp"
+                android:paddingTop="6dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_textfield"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableRight="@drawable/ic_eye"
+                android:hint="Xác nhận mật khẩu"
+                android:inputType="textPassword"
+                android:paddingBottom="5dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="15dp"
+                android:paddingTop="6dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_textfield"
+                android:drawableLeft="@drawable/ic_location"
+                android:hint="Địa chỉ của bạn"
+                android:inputType="text"
+                android:paddingBottom="5dp"
+                android:paddingLeft="11dp"
+                android:paddingTop="6dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="   Tôi là bác sĩ"
+                android:textColor="#999999"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Đồng ý"
+                    android:textColor="#cc0000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="Điều Khoản Sử Dụng"
+                    android:textColor="#cc0000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg_button"
+                android:text="ĐĂNG KÝ"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Quay lại"
+                android:textColor="#2B78E4"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
