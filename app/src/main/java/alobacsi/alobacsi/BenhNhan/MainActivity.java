@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_khoa:
                    callFragment(new ChuyenKhoaFragment());
-//                    callFragment(new DSBacSiFragment());
                     return true;
                 case R.id.navigation_tai_khoan:
+                    callFragment(new CaNhanFragment());
                     return true;
 
             }

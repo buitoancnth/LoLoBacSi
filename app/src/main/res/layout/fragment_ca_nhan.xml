@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        app:navigationIcon="?attr/homeAsUpIndicator"
         >
         <LinearLayout
             android:layout_width="wrap_content"
@@ -33,7 +32,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:padding="10dp"
+                android:padding="2dp"
                 android:src="@drawable/img_huu_quan"
                 />
             <LinearLayout
@@ -47,9 +46,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="22 Tuổi"
+                    android:textSize="15dp"
                     android:layout_marginRight="10dp"
                     android:textColor="#ffffff"/>
                 <TextView
+                    android:textSize="15dp"
                     android:id="@+id/tvSoDuTaiKhoan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -63,51 +64,99 @@
 
 
     </android.support.v7.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/tvChuyenKhoa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Chuyên Khoa : Răng - Hàm - Mặt"
-        android:background="#ffffff"
-        android:textSize="18dp"
+    <Button
+        android:id="@+id/btnThongTinCaNhan"
         android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
-        android:padding="7dp"
-        />
-    <TextView
-        android:id="@+id/tvKinhNghiem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kinh Nghiệm : 3 năm"
+        android:text="Thông tin cá nhân"
+        android:drawableLeft="@drawable/ic_thong_tin_ca_nhan"
+        android:drawableRight="@drawable/ic_next"
         android:background="#ffffff"
-        android:textSize="18dp"
-        android:layout_marginTop="5dp"
-        android:paddingStart="10dp"
-        android:padding="7dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+
         />
-    <TextView
-        android:id="@+id/tvDiaChi"
+    <Button
+        android:id="@+id/btnNapTien"
+        android:layout_marginTop="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Địa Chỉ : Ấp A, Huyện B, Đà Nẵng"
+        android:text="Nạp Tiền"
+        android:drawableLeft="@drawable/ic_nap_tien"
+        android:drawableRight="@drawable/ic_next"
         android:background="#ffffff"
-        android:textSize="18dp"
-        android:layout_marginTop="5dp"
-        android:paddingStart="10dp"
-        android:padding="7dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="17dp"
         />
-    <TextView
-        android:id="@+id/tvSoLanTuVan"
+    <Button
+        android:id="@+id/btnLichSuGiaoDich"
+        android:layout_marginTop="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Số Lần Tư Vấn : 302"
+        android:text="Lịch Sử Giao Dịch"
+        android:drawableLeft="@drawable/ic_lich_su_giao_dich"
+        android:drawableRight="@drawable/ic_next"
         android:background="#ffffff"
-        android:textSize="18dp"
-        android:layout_marginTop="5dp"
-        android:paddingStart="10dp"
-        android:padding="7dp"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="17dp"
         />
+    <Button
+        android:id="@+id/btnDieuKhoan"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điều Khoản"
+        android:drawableLeft="@drawable/ic_dieu_khoan"
+        android:drawableRight="@drawable/ic_next"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        />
+    <Button
+        android:id="@+id/btnGopY"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Góp Ý"
+        android:drawableLeft="@drawable/ic_gop_y"
+        android:drawableRight="@drawable/ic_next"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        />
+    <Button
+        android:id="@+id/btnDangXuat"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Xuất"
+        android:drawableLeft="@drawable/ic_dang_xuat"
+        android:drawableRight="@drawable/ic_next"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:drawablePadding="20dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        />
+
+
 
 
 </LinearLayout>
