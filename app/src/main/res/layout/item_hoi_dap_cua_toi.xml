@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_icon_cau_hoi">
+    <TextView
+        android:id="@+id/tvBacSi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mình đã 23 tuổi rồi mà vẫn thấy thèm rượu, làm sao để cai rượu bác sĩ........."
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        >
+
+        <ImageView
+            android:id="@+id/imvComment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_comment" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1/1/2017"
+            android:textSize="15dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

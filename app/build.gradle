@@ -47,6 +47,4 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.2.0'
 
 
-
-
 }

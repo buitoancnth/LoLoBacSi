@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_chat_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_icon_ds_bac_si">
+    <TextView
+        android:id="@+id/tvChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mình đã 23 tuổi rồi mà vẫn thấy thèm rượu, làm sao để cai rượu bác sĩ........."
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:padding="5dp"/>
+</LinearLayout>

@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_tin_tuc:
+                    callFragment(new ChatFragment());
                     return true;
                 case R.id.navigation_hoi_dap:
+                    callFragment(new HoiDapFragment());
                     return true;
                 case R.id.navigation_trang_chu:
                     callFragment(new HomeUserFragment());
